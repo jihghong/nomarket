@@ -31,7 +31,7 @@ nomarket 股市休市日期
 安裝方法
 --------
 
-    pip install 'nomarket @ https://jihghong.github.com/nomarket'
+    pip install "nomarket @ git+https://www.github.com/jihghong/nomarket"
 
 維護
 ----
