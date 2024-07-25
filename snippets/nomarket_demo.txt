@@ -1,0 +1,38 @@
+nomarket(date(2024, 2, 1))=False
+nomarket(date(2024, 2, 2))=False
+nomarket(date(2024, 2, 3))=True
+nomarket(date(2024, 2, 4))=True
+nomarket(date(2024, 2, 5))=False
+nomarket(date(2024, 2, 6))=True
+nomarket(date(2024, 2, 7))=True
+nomarket(date(2024, 2, 8))=True
+nomarket(date(2024, 2, 9))=True
+nomarket(date(2024, 2, 10))=True
+nomarket(date(2024, 2, 11))=True
+nomarket(date(2024, 2, 12))=True
+nomarket(date(2024, 2, 13))=True
+nomarket(date(2024, 2, 14))=True
+nomarket(date(2024, 2, 15))=False
+nomarket(date(2024, 2, 16))=False
+prev_marketdate(date(2024, 2, 15))=datetime.date(2024, 2, 5)
+prev_marketdate(date(2024, 2, 15), inclusive=True)=datetime.date(2024, 2, 15)
+prev_marketdate(date(2024, 2, 15), 6)=datetime.date(2024, 1, 29)
+prev_marketdate(date(2024, 2, 15), 6, inclusive=True)=datetime.date(2024, 1, 30)
+next_marketdate(date(2024, 2, 5))=datetime.date(2024, 2, 15)
+next_marketdate(date(2024, 2, 5), inclusive=True)=datetime.date(2024, 2, 5)
+next_marketdate(date(2024, 2, 5), 6)=datetime.date(2024, 2, 22)
+next_marketdate(date(2024, 2, 5), 6, inclusive=True)=datetime.date(2024, 2, 21)
+list(prev_marketdates(date(2024, 2, 15)))=[datetime.date(2024, 2, 5)]
+list(prev_marketdates(date(2024, 2, 15), inclusive=True))=[datetime.date(2024, 2, 15)]
+list(prev_marketdates(date(2024, 2, 15), 6))=[datetime.date(2024, 2, 5), datetime.date(2024, 2, 2), datetime.date(2024, 2, 1), datetime.date(2024, 1, 31), datetime.date(2024, 1, 30), datetime.date(2024, 1, 29)]
+list(prev_marketdates(date(2024, 2, 15), 6, inclusive=True))=[datetime.date(2024, 2, 15), datetime.date(2024, 2, 5), datetime.date(2024, 2, 2), datetime.date(2024, 2, 1), datetime.date(2024, 1, 31), datetime.date(2024, 1, 30)]
+list(next_marketdates(date(2024, 2, 5)))=[datetime.date(2024, 2, 15)]
+list(next_marketdates(date(2024, 2, 5), inclusive=True))=[datetime.date(2024, 2, 5)]
+list(next_marketdates(date(2024, 2, 5), 6))=[datetime.date(2024, 2, 15), datetime.date(2024, 2, 16), datetime.date(2024, 2, 19), datetime.date(2024, 2, 20), datetime.date(2024, 2, 21), datetime.date(2024, 2, 22)]
+list(next_marketdates(date(2024, 2, 5), 6, inclusive=True))=[datetime.date(2024, 2, 5), datetime.date(2024, 2, 15), datetime.date(2024, 2, 16), datetime.date(2024, 2, 19), datetime.date(2024, 2, 20), datetime.date(2024, 2, 21)]
+marketdates_between(date(2024, 2, 1), date(2024, 2, 16))
+2024-02-01
+2024-02-02
+2024-02-05
+2024-02-15
+2024-02-16
