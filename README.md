@@ -8,7 +8,7 @@ nomarket 股市休市日期
 使用方法
 --------
 
-請參考 [showcase/nomarket_demo.py](showcase/nomarket_demo.py)
+請參考 [showcase/nomarket_demo.py](showcase/nomarket_demo.py) 以今年日期執行之結果，以下為 2024 年之範例
 
     from datetime import date
     from nomarket import nomarket, prev_marketdates, prev_marketdate, next_marketdates, next_marketdate, marketdates_between
