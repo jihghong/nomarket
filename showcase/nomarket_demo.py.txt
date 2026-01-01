@@ -9,27 +9,27 @@ nomarket(date(2026, 2, 8))=True
 nomarket(date(2026, 2, 9))=False
 nomarket(date(2026, 2, 10))=False
 nomarket(date(2026, 2, 11))=False
-nomarket(date(2026, 2, 12))=False
-nomarket(date(2026, 2, 13))=False
+nomarket(date(2026, 2, 12))=True
+nomarket(date(2026, 2, 13))=True
 nomarket(date(2026, 2, 14))=True
 nomarket(date(2026, 2, 15))=True
 nomarket(date(2026, 2, 16))=True
-prev_marketdate(date(2026, 2, 15))=datetime.date(2026, 2, 13)
-prev_marketdate(date(2026, 2, 15), inclusive=True)=datetime.date(2026, 2, 13)
-prev_marketdate(date(2026, 2, 15), 6)=datetime.date(2026, 2, 6)
-prev_marketdate(date(2026, 2, 15), 6, inclusive=True)=datetime.date(2026, 2, 6)
+prev_marketdate(date(2026, 2, 15))=datetime.date(2026, 2, 11)
+prev_marketdate(date(2026, 2, 15), inclusive=True)=datetime.date(2026, 2, 11)
+prev_marketdate(date(2026, 2, 15), 6)=datetime.date(2026, 2, 4)
+prev_marketdate(date(2026, 2, 15), 6, inclusive=True)=datetime.date(2026, 2, 4)
 next_marketdate(date(2026, 2, 5))=datetime.date(2026, 2, 6)
 next_marketdate(date(2026, 2, 5), inclusive=True)=datetime.date(2026, 2, 5)
-next_marketdate(date(2026, 2, 5), 6)=datetime.date(2026, 2, 13)
-next_marketdate(date(2026, 2, 5), 6, inclusive=True)=datetime.date(2026, 2, 12)
-list(prev_marketdates(date(2026, 2, 15)))=[datetime.date(2026, 2, 13)]
-list(prev_marketdates(date(2026, 2, 15), inclusive=True))=[datetime.date(2026, 2, 13)]
-list(prev_marketdates(date(2026, 2, 15), 6))=[datetime.date(2026, 2, 13), datetime.date(2026, 2, 12), datetime.date(2026, 2, 11), datetime.date(2026, 2, 10), datetime.date(2026, 2, 9), datetime.date(2026, 2, 6)]
-list(prev_marketdates(date(2026, 2, 15), 6, inclusive=True))=[datetime.date(2026, 2, 13), datetime.date(2026, 2, 12), datetime.date(2026, 2, 11), datetime.date(2026, 2, 10), datetime.date(2026, 2, 9), datetime.date(2026, 2, 6)]
+next_marketdate(date(2026, 2, 5), 6)=datetime.date(2026, 2, 24)
+next_marketdate(date(2026, 2, 5), 6, inclusive=True)=datetime.date(2026, 2, 23)
+list(prev_marketdates(date(2026, 2, 15)))=[datetime.date(2026, 2, 11)]
+list(prev_marketdates(date(2026, 2, 15), inclusive=True))=[datetime.date(2026, 2, 11)]
+list(prev_marketdates(date(2026, 2, 15), 6))=[datetime.date(2026, 2, 11), datetime.date(2026, 2, 10), datetime.date(2026, 2, 9), datetime.date(2026, 2, 6), datetime.date(2026, 2, 5), datetime.date(2026, 2, 4)]
+list(prev_marketdates(date(2026, 2, 15), 6, inclusive=True))=[datetime.date(2026, 2, 11), datetime.date(2026, 2, 10), datetime.date(2026, 2, 9), datetime.date(2026, 2, 6), datetime.date(2026, 2, 5), datetime.date(2026, 2, 4)]
 list(next_marketdates(date(2026, 2, 5)))=[datetime.date(2026, 2, 6)]
 list(next_marketdates(date(2026, 2, 5), inclusive=True))=[datetime.date(2026, 2, 5)]
-list(next_marketdates(date(2026, 2, 5), 6))=[datetime.date(2026, 2, 6), datetime.date(2026, 2, 9), datetime.date(2026, 2, 10), datetime.date(2026, 2, 11), datetime.date(2026, 2, 12), datetime.date(2026, 2, 13)]
-list(next_marketdates(date(2026, 2, 5), 6, inclusive=True))=[datetime.date(2026, 2, 5), datetime.date(2026, 2, 6), datetime.date(2026, 2, 9), datetime.date(2026, 2, 10), datetime.date(2026, 2, 11), datetime.date(2026, 2, 12)]
+list(next_marketdates(date(2026, 2, 5), 6))=[datetime.date(2026, 2, 6), datetime.date(2026, 2, 9), datetime.date(2026, 2, 10), datetime.date(2026, 2, 11), datetime.date(2026, 2, 23), datetime.date(2026, 2, 24)]
+list(next_marketdates(date(2026, 2, 5), 6, inclusive=True))=[datetime.date(2026, 2, 5), datetime.date(2026, 2, 6), datetime.date(2026, 2, 9), datetime.date(2026, 2, 10), datetime.date(2026, 2, 11), datetime.date(2026, 2, 23)]
 marketdates_between(date(2026, 2, 1), date(2026, 2, 16))
 2026-02-02
 2026-02-03
@@ -39,5 +39,3 @@ marketdates_between(date(2026, 2, 1), date(2026, 2, 16))
 2026-02-09
 2026-02-10
 2026-02-11
-2026-02-12
-2026-02-13

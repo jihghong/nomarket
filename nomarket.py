@@ -14,6 +14,8 @@ nomarket_dates = set([
     datetime.date(2026, 2, 1),
     datetime.date(2026, 2, 7),
     datetime.date(2026, 2, 8),
+    datetime.date(2026, 2, 12),
+    datetime.date(2026, 2, 13),
     datetime.date(2026, 2, 14),
     datetime.date(2026, 2, 15),
     datetime.date(2026, 2, 16),
