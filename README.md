@@ -1,7 +1,14 @@
 nomarket 股市休市日期
 =====================
 
-使用方法 (請參考 [snippets/nomarket_demo.py](snippets/nomarket_demo.py))
+目前僅提供台灣股市當年休市日期，每年元旦更新
+
+正確資訊及歷史日期請參考[台灣證券交易所交易資訊](https://www.twse.com.tw/zh/trading/holiday.html)
+
+使用方法
+--------
+
+請參考 [showcase/nomarket_demo.py](showcase/nomarket_demo.py)
 
     from datetime import date
     from nomarket import nomarket, prev_marketdates, prev_marketdate, next_marketdates, next_marketdate, marketdates_between
@@ -31,9 +38,4 @@ nomarket 股市休市日期
 安裝方法
 --------
 
-    pip install "nomarket @ git+https://www.github.com/jihghong/nomarket"
-
-維護
-----
-
-目前僅提供台灣股市休市日期，如要參與維護，或擴充適用於全球市場，歡迎提出 pull request
+    pip install git+https://www.github.com/jihghong/nomarket
